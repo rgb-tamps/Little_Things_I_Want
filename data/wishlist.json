@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "id": "wish-001",
+    "name": "Power Bank",
+    "image": "https://down-ph.img.susercontent.com/file/ph-11134207-81ztc-meqlhkys9zia1e.webp",
+    "price": 400,
+    "category": "Electronics",
+    "description": "I want Power Bank.",
+    "url": "https://shopee.ph/%E2%9C%85Meet-DX242-4in1-20000mAh-Portable-Powerbank-with-Fast-Charging-Built-in-CABLE-for-USB-iP-Type-C-i.38592024.42469299875?extraParams=%7B%22display_model_id%22%3A301582344987%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-81ztc-meqlhkys9zia1e",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wish-002",
+    "name": "Canvas tote",
+    "image": "https://picsum.photos/id/26/640/770",
+    "price": 1850,
+    "category": "Fashion",
+    "description": "An everyday bag for errands and books.",
+    "url": "https://example.com/tote",
+    "priority": "Medium",
+    "status": "Want"
+  }
+]
