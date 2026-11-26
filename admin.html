@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF8F5">
+  <meta name="description" content="Manage the little things on your wishlist.">
+  <title>Manage wishlist · little things i want.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script src="assets/js/wishlist.js" defer></script>
+  <script src="assets/js/storage.js" defer></script>
+  <script src="assets/js/admin.js" defer></script>
+</head>
+<body class="admin-page">
+  <header class="site-header" id="top">
+    <a class="brand" href="./" aria-label="little things i want, home">little things <span>i want.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="./">Home</a>
+      <a href="index.html#wishlist">Collections</a>
+      <a class="current" href="admin.html" aria-current="page">Admin</a>
+    </nav>
+  </header>
+  <main class="admin-main">
+    <div class="admin-intro">
+      <p class="eyebrow">YOUR COLLECTION</p>
+      <h1>Manage wishlist<span class="sage-dot">.</span></h1>
+      <p>Add, edit, and arrange the things you're saving for someday.</p>
+    </div>
+    <section class="admin-workspace" aria-label="Wishlist editor">
+      <div class="admin-editor">
+        <div class="admin-list-heading">
+          <h2>Your saved things</h2>
+          <button class="primary-button" id="newItemButton" type="button">＋ Add item</button>
+        </div>
+        <p class="admin-count" id="adminItemCount" aria-live="polite"></p>
+        <div class="admin-item-list" id="adminItemList"></div>
+        <form class="item-form" id="itemForm">
+          <div class="form-heading">
+            <div>
+              <p class="eyebrow">ITEM DETAILS</p>
+              <h2 id="formTitle">Add a wishlist item</h2>
+            </div>
+            <button class="text-button" id="cancelEdit" type="button">Cancel</button>
+          </div>
+          <div class="form-grid">
+            <label class="full-field">ID
+              <input id="itemId" name="id" type="text" readonly aria-describedby="idHelp">
+              <small id="idHelp">Generated automatically and used to identify this item.</small>
+            </label>
+            <label class="full-field">Name *
+              <input id="itemName" name="name" type="text" maxlength="90" required placeholder="e.g. A little film camera">
+            </label>
+            <label class="full-field">Image URL or path *
+              <input id="itemImage" name="image" type="text" required placeholder="https://… or assets/images/photo.jpg">
+            </label>
+            <label>Price (PHP)
+              <input id="itemPrice" name="price" type="number" min="0" step="0.01" placeholder="0">
+            </label>
+            <label>Category *
+              <input id="itemCategory" name="category" type="text" maxlength="35" required placeholder="Technology">
+            </label>
+            <label>Priority
+              <select id="itemPriority" name="priority">
+                <option>Low</option><option selected>Medium</option><option>High</option>
+              </select>
+            </label>
+            <label>Status
+              <select id="itemStatus" name="status">
+                <option value="Want">Want</option><option value="Purchased">Purchased</option>
+              </select>
+            </label>
+            <label class="full-field">Product link
+              <input id="itemUrl" name="url" type="url" placeholder="https://…">
+            </label>
+            <label class="full-field">Description
+              <textarea id="itemDescription" name="description" rows="3" maxlength="280" placeholder="Why is this on your wishlist?"></textarea>
+            </label>
+          </div>
+          <div class="form-actions"><button class="primary-button" type="submit">Save item</button></div>
+        </form>
+      </div>
+      <aside class="preview-column" aria-labelledby="previewHeading">
+        <p class="eyebrow">LIVE PREVIEW</p>
+        <h2 id="previewHeading">Your card, as it will appear.</h2>
+        <article class="product-card preview-card" id="cardPreview"></article>
+        <section class="backup-section" aria-labelledby="backupHeading">
+          <p class="eyebrow">PUBLISH YOUR CHANGES</p>
+          <h2 id="backupHeading">Keep your collection in sync.</h2>
+          <p>Browser edits are saved only in this browser. Export the JSON, replace <code>data/wishlist.json</code> in GitHub, then commit your changes.</p>
+          <div class="backup-actions">
+            <button class="primary-button" id="exportButton" type="button">Export JSON</button>
+            <label class="secondary-button file-button">Import JSON
+              <input id="importInput" type="file" accept=".json,application/json">
+            </label>
+            <button class="secondary-button" id="restoreButton" type="button">Reset to repository data</button>
+          </div>
+          <p class="storage-note" id="storageNote">Changes are stored in this browser only.</p>
+        </section>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="./">little things <span>i want.</span></a>
+    <p>Collected with love. A personal wishlist · 2026</p>
+    <a class="back-top" href="#top">BACK TO TOP ↑</a>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@media (max-width: 1050px) {
+  .masonry-grid { columns: 3; }
+  .collection-section { padding-right: 5%; padding-left: 5%; }
+  .toolbar { align-items: flex-start; flex-direction: column; }
+  .toolbar-tools { width: 100%; justify-content: space-between; }
+}
+@media (max-width: 700px) {
+  .site-header { height: 66px; padding: 0 5%; }
+  .brand { font-size: 20px; }
+  .main-nav { gap: 18px; font-size: 12px; }
+  .hero { min-height: 360px; padding: 69px 7% 54px; }
+  .hero h1 { font-size: clamp(52px, 11vw, 70px); }
+  .hero-subtitle { max-width: 350px; font-size: 14px; }
+  .collection-section { padding: 54px 5% 64px; }
+  .masonry-grid { columns: 2; column-gap: 13px; }
+  .product-card { margin-bottom: 13px; }
+  .section-note { display: none; }
+  .site-footer { flex-wrap: wrap; padding-right: 5%; padding-left: 5%; }
+  .site-footer p { order: 3; width: 100%; }
+  .admin-main { padding: 42px 5% 60px; }
+  .admin-workspace { grid-template-columns: 1fr; gap: 34px; }
+  .preview-column { position: static; }
+  .preview-card { max-width: 440px; }
+  .dialog-content { grid-template-columns: 1fr; }
+  .dialog-image { max-height: 45vh; }
+  .dialog-copy { padding: 24px; }
+}
+@media (max-width: 420px) {
+  .main-nav { gap: 12px; font-size: 11px; }
+  .brand { font-size: 18px; }
+  .hero { min-height: 330px; padding-top: 61px; }
+  .hero h1 { font-size: 50px; }
+  .masonry-grid { columns: 1; }
+  .toolbar-tools { align-items: stretch; flex-direction: column; }
+  .search-box { min-width: 0; }
+  .sort-label { justify-content: space-between; }
+  .product-title { font-size: 18px; }
+  .admin-list-heading { align-items: flex-start; flex-direction: column; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-grid .full-field { grid-column: auto; }
+  .admin-row { gap: 8px; }
+  .admin-thumb { width: 48px; height: 54px; }
+  .row-actions button { padding: 7px; }
+  .footer-brand { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

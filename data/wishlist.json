@@ -1,0 +1,90 @@
+[
+  {
+    "id": "film-camera",
+    "name": "A little film camera",
+    "image": "https://picsum.photos/id/250/640/820",
+    "price": 5490,
+    "category": "Lifestyle",
+    "description": "For keeping everyday moments in a more thoughtful, tangible way.",
+    "url": "https://example.com/film-camera",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wireless-headphones",
+    "name": "Quiet hours headphones",
+    "image": "https://picsum.photos/id/1080/640/510",
+    "price": 12990,
+    "category": "Technology",
+    "description": "A comfortable pair for long playlists, focus, and flights.",
+    "url": "https://example.com/headphones",
+    "priority": "High",
+    "status": "Want"
+  },
+  {
+    "id": "canvas-tote",
+    "name": "Everyday canvas tote",
+    "image": "https://picsum.photos/id/26/640/770",
+    "price": 1850,
+    "category": "Fashion",
+    "description": "Room for a book, a market stop, and all the little things.",
+    "url": "https://example.com/tote",
+    "priority": "Low",
+    "status": "Want"
+  },
+  {
+    "id": "yoga-mat",
+    "name": "Soft sage yoga mat",
+    "image": "https://picsum.photos/id/1059/640/680",
+    "price": 3200,
+    "category": "Fitness",
+    "description": "A small invitation to stretch, breathe, and slow down.",
+    "url": "https://example.com/yoga-mat",
+    "priority": "Medium",
+    "status": "Purchased"
+  },
+  {
+    "id": "reading-lamp",
+    "name": "A warm reading lamp",
+    "image": "https://picsum.photos/id/1060/640/900",
+    "price": 6790,
+    "category": "Lifestyle",
+    "description": "For a softer glow at the end of long, busy days.",
+    "url": "https://example.com/reading-lamp",
+    "priority": "High",
+    "status": "Want"
+  },
+  {
+    "id": "sneakers",
+    "name": "Weekend walking sneakers",
+    "image": "https://picsum.photos/id/21/640/580",
+    "price": 4890,
+    "category": "Fashion",
+    "description": "An easy pair for exploring a new neighborhood on foot.",
+    "url": "https://example.com/sneakers",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "water-bottle",
+    "name": "The just-right water bottle",
+    "image": "https://picsum.photos/id/30/640/760",
+    "price": 1250,
+    "category": "Fitness",
+    "description": "A sturdy bottle that makes remembering to hydrate easier.",
+    "url": "https://example.com/water-bottle",
+    "priority": "Low",
+    "status": "Want"
+  },
+  {
+    "id": "tiny-speaker",
+    "name": "Tiny room speaker",
+    "image": "https://picsum.photos/id/1067/640/560",
+    "price": 7350,
+    "category": "Others",
+    "description": "A little speaker for kitchen dancing and weekend mornings.",
+    "url": "https://example.com/tiny-speaker",
+    "priority": "High",
+    "status": "Want"
+  }
+]

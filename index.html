@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF8F5">
+  <meta name="description" content="A little collection of things I'm saving for someday.">
+  <title>little things i want.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script src="assets/js/wishlist.js" defer></script>
+  <script src="assets/js/storage.js" defer></script>
+  <script src="assets/js/filters.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="./" aria-label="little things i want, home">little things <span>i want.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="current" href="./" aria-current="page">Home</a>
+      <a href="#wishlist">Collections</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <p class="eyebrow">A PERSONAL WISHLIST <span aria-hidden="true">✳</span></p>
+      <h1 id="heroTitle">Things I'd love<br><em>to have.</em></h1>
+      <p class="hero-subtitle">A little collection of things I'm saving for someday.</p>
+      <p class="live-count" id="itemCount" aria-live="polite">Loading saved things...</p>
+      <a class="hero-link" href="#wishlist">Explore my collection <span aria-hidden="true">↓</span></a>
+    </section>
+    <section class="collection-section" id="wishlist" aria-labelledby="collectionTitle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2 id="collectionTitle">Saved for someday<span class="sage-dot">.</span></h2>
+        </div>
+        <p class="section-note">A catalog of little wants <span aria-hidden="true">♡</span></p>
+      </div>
+      <div class="toolbar">
+        <div class="category-list" id="categoryFilters" aria-label="Filter by category"></div>
+        <div class="toolbar-tools">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search" placeholder="Search the collection" aria-label="Search wishlist">
+          </label>
+          <label class="sort-label">Sort
+            <select id="sortSelect" aria-label="Sort wishlist">
+              <option value="priority">Priority</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <p class="load-message hidden" id="loadMessage" role="status"></p>
+      <div class="masonry-grid" id="wishlistGrid" aria-live="polite" aria-busy="true"></div>
+      <div class="empty-state hidden" id="emptyState">
+        <span aria-hidden="true">♡</span>
+        <h3>No little things found.</h3>
+        <p>Try another search or choose a different category.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="./">little things <span>i want.</span></a>
+    <p>Collected with love. A personal wishlist · 2026</p>
+    <a class="back-top" href="#top">BACK TO TOP ↑</a>
+  </footer>
+  <dialog class="details-dialog" id="detailsDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="Close item details">×</button>
+    <div class="dialog-content" id="dialogContent"></div>
+  </dialog>
+</body>
+</html>
