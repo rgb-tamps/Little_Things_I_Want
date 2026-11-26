@@ -7,6 +7,7 @@
 @media (max-width: 700px) {
   .site-header { height: 66px; padding: 0 5%; }
   .brand { font-size: 20px; }
+  .brand-logo { width: 34px; height: 34px; }
   .main-nav { gap: 18px; font-size: 12px; }
   .hero { min-height: 360px; padding: 69px 7% 54px; }
   .hero h1 { font-size: clamp(52px, 11vw, 70px); }

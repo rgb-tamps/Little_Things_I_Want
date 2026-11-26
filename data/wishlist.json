@@ -12,12 +12,78 @@
   },
   {
     "id": "wish-002",
-    "name": "Canvas tote",
-    "image": "https://picsum.photos/id/26/640/770",
-    "price": 1850,
+    "name": "Shoes Sneakers",
+    "image": "https://down-ph.img.susercontent.com/file/ph-11134207-820lg-mtv3x5g1q41s44.webp",
+    "price": 675,
     "category": "Fashion",
-    "description": "An everyday bag for errands and books.",
-    "url": "https://example.com/tote",
+    "description": "I'm Size 40-41.",
+    "url": "https://shopee.ph/%E3%80%90Size36-45%E3%80%91A04-2026-New-Fashion-All-Black-Sport-Shoes-Sneakers-For-Man-And-Women-i.1820994238.55068714711?extraParams=%7B%22display_model_id%22%3A351571702993%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-820lg-mtv3x5g1q41s44",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wish-003",
+    "name": "Jackets",
+    "image": "https://down-ph.img.susercontent.com/file/cn-11134207-820l4-msv6zftutcsnd8.webp",
+    "price": 509,
+    "category": "Fashion",
+    "description": "I'm Size Large.",
+    "url": "https://shopee.ph/%E3%80%90Size36-45%E3%80%91A04-2026-New-Fashion-All-Black-Sport-Shoes-Sneakers-For-Man-And-Women-i.1820994238.55068714711?extraParams=%7B%22display_model_id%22%3A351571702993%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-820lg-mtv3x5g1q41s44",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wish-004",
+    "name": "Jackets",
+    "image": "https://down-ph.img.susercontent.com/file/ph-11134207-81ztf-mgiv9apf0zri0f.webp",
+    "price": 662,
+    "category": "Fashion",
+    "description": "I'm Size Large.",
+    "url": "https://shopee.ph/MON-Ferrari-F1-Jacket-Men-Vintage-Embroidery-Bomber-Jacket-Women-Motor-Windbreaker-Jacket-For-Couple-i.1519359262.29486078856?extraParams=%7B%22display_model_id%22%3A258382671948%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-81zto-mj3k1b2h1koxac",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wish-005",
+    "name": "MOREE Men's Baggy Jeans",
+    "image": "https://down-ph.img.susercontent.com/file/ph-11134207-820lb-ms3we8ijdeyv88.webp",
+    "price": 699,
+    "category": "Fashion",
+    "description": "I'm Size Large and Color grey.",
+    "url": "https://shopee.ph/MOREE-Men's-Baggy-Jeans-American-RetroStyle-Loose-Fit-Casual-Washed-Curved-Wide-Leg-Pants-i.1165199615.47166348704?extraParams=%7B%22display_model_id%22%3A431391472470%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-820lb-ms3we8ijdeyv88",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wish-006",
+    "name": "SKIN1004 Madagascar Centella Poremizing Light Gel Cream 75ml Pore repair",
+    "image": "https://down-ph.img.susercontent.com/file/cn-11134207-820l4-mvhajia5vr4505.webp",
+    "price": 375,
+    "category": "Skincare",
+    "description": "Skincare hehe.",
+    "url": "https://shopee.ph/-FDA-Approved-SKIN1004-Madagascar-Centella-Poremizing-Light-Gel-Cream-75ml-Pore-repair-improves-dullness-and-dark-spots-i.1561803971.48221631500?extraParams=%7B%22display_model_id%22%3A288089716273%2C%22model_selection_logic%22%3A3%7D&image_ids=cn-11134207-820l4-mvhajia5vr4505",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wish-007",
+    "name": "Klued - 2% Salicylic Acid Gentle Cleanser",
+    "image": "https://down-ph.img.susercontent.com/file/ph-11134207-820lb-mubz9s3ijdad82.webp",
+    "price": 349,
+    "category": "Skincare",
+    "description": "Salicylic acid cleanser.",
+    "url": "https://shopee.ph/Klued-2-Salicylic-Acid-Gentle-Cleanser-i.732603249.16069003945?extraParams=%7B%22display_model_id%22%3A99121486073%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-820l6-mubz9f1dfhmv9e",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wish-008",
+    "name": "Ian Darcy Oil Rich Perfume FOR MEN (100mL)",
+    "image": "https://down-ph.img.susercontent.com/file/ph-11134207-820lg-mun5jss95iwx54.webp",
+    "price": 500,
+    "category": "Skincare",
+    "description": "i want LW.",
+    "url": "https://shopee.ph/Ian-Darcy-Oil-Rich-Perfume-FOR-MEN-(100mL)-i.148896403.2250896691?extraParams=%7B%22display_model_id%22%3A4291531902%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-820l4-mun5krs1xedf19",
     "priority": "Medium",
     "status": "Want"
   }

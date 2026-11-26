@@ -1,21 +1,21 @@
 :root {
-  --sage: #7C9A82;
-  --sage-dark: #4F6A55;
-  --sage-tint: #E7EEE8;
-  --terracotta: #E07A5F;
-  --terracotta-dark: #A54832;
-  --terracotta-tint: #F7E5DF;
-  --lilac: #B8A9E8;
-  --lilac-dark: #62548F;
-  --lilac-tint: #F0ECFA;
-  --background: #FAF8F5;
+  --sage: #E93F1A;
+  --sage-dark: #B52E13;
+  --sage-tint: #FCE8E2;
+  --terracotta: #E93F1A;
+  --terracotta-dark: #B52E13;
+  --terracotta-tint: #FCE8E2;
+  --lilac: #1D1D1D;
+  --lilac-dark: #1D1D1D;
+  --lilac-tint: #F2F2F2;
+  --background: #FFFFFF;
   --card: #FFFFFF;
-  --text: #1E1E24;
-  --muted: #6B6B76;
-  --border: #ECE8E2;
-  --shadow: 0 12px 32px rgba(30, 30, 36, 0.09);
-  --soft-shadow: 0 4px 15px rgba(30, 30, 36, 0.045);
-  --backdrop: rgba(30, 30, 36, 0.52);
+  --text: #0C0C0C;
+  --muted: #5C5C5C;
+  --border: #E5E5E5;
+  --shadow: 0 12px 32px rgba(12, 12, 12, 0.12);
+  --soft-shadow: 0 4px 15px rgba(12, 12, 12, 0.05);
+  --backdrop: rgba(0, 0, 0, 0.52);
   --font-body: "DM Sans", sans-serif;
   --font-heading: "Playfair Display", Georgia, serif;
   --radius-card: 16px;
@@ -55,8 +55,12 @@ button { cursor: pointer; }
   background: var(--background);
   border-bottom: 1px solid var(--border);
 }
+.site-header .brand { display: inline-flex; align-items: center; gap: 10px; }
 .brand { font: 500 23px/1 var(--font-heading); letter-spacing: -0.7px; white-space: nowrap; }
+.brand-logo { display: block; width: 40px; height: 40px; flex: 0 0 auto; border-radius: 50%; object-fit: cover; }
 .brand span { color: var(--sage-dark); font-style: italic; }
+.brand > .brand-name { color: var(--text); font: inherit; font-style: normal; }
+.brand-name > span { color: var(--sage-dark); font-style: italic; }
 .main-nav { display: flex; align-items: center; gap: 34px; color: var(--muted); font-size: 13px; }
 .main-nav a { padding: 8px 0; transition: color 180ms ease; }
 .main-nav a:hover, .main-nav a.current { color: var(--sage-dark); }
