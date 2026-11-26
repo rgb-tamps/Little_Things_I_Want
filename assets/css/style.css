@@ -255,6 +255,17 @@ h1, h2, h3, p { margin-top: 0; }
 .admin-intro { margin-bottom: 34px; }
 .admin-intro h1 { font-size: clamp(42px, 5vw, 59px); }
 .admin-intro > p:last-child { margin: 12px 0 0; color: var(--muted); font-size: 14px; }
+.admin-intro .admin-help {
+  max-width: 760px;
+  margin-top: 18px;
+  padding: 13px 16px;
+  border-left: 3px solid var(--sage);
+  border-radius: 0 8px 8px 0;
+  background: var(--sage-tint);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.7;
+}
 .admin-workspace { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr); gap: 42px; align-items: start; }
 .admin-list-heading { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
 .admin-list-heading h2 { font-size: 27px; }
