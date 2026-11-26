@@ -83,7 +83,8 @@
     $("itemId").value = Wishlist.createId();
     $("itemPriority").value = "Medium";
     $("itemStatus").value = "Want";
-    $("formTitle").textContent = "Add a wishlist item";
+    $("formTitle").textContent = "Add a wish";
+    $("saveItemButton").textContent = "Add wish";
     updatePreview();
   }
 
@@ -99,7 +100,8 @@
     $("itemStatus").value = item.status;
     $("itemUrl").value = item.url;
     $("itemDescription").value = item.description;
-    $("formTitle").textContent = "Edit wishlist item";
+    $("formTitle").textContent = "Edit wish";
+    $("saveItemButton").textContent = "Save changes";
     updatePreview();
     $("itemName").focus();
     $("itemForm").scrollIntoView({ behavior: "smooth", block: "start" });

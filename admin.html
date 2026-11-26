@@ -29,21 +29,15 @@
       <p class="eyebrow">YOUR COLLECTION</p>
       <h1>Manage wishlist<span class="sage-dot">.</span></h1>
       <p>Add, edit, and arrange the things you're saving for someday.</p>
-      <p class="admin-help"><strong>To add a wish:</strong> Select <strong>＋ Add item</strong>, fill in the name, image, and category, then choose <strong>Save item</strong>. Add a price, description, link, priority, or status if you like. Changes stay in this browser until you export the JSON and commit it to the repository.</p>
+      <p class="admin-help"><strong>To add a wish:</strong> Fill in the form below and choose <strong>Add wish</strong>. Name, image, and category are required; the other details are optional. Changes stay in this browser until you export the JSON and commit it to the repository.</p>
     </div>
     <section class="admin-workspace" aria-label="Wishlist editor">
       <div class="admin-editor">
-        <div class="admin-list-heading">
-          <h2>Your saved things</h2>
-          <button class="primary-button" id="newItemButton" type="button">＋ Add item</button>
-        </div>
-        <p class="admin-count" id="adminItemCount" aria-live="polite"></p>
-        <div class="admin-item-list" id="adminItemList"></div>
-        <form class="item-form" id="itemForm">
+        <form class="item-form" id="itemForm" aria-labelledby="formTitle">
           <div class="form-heading">
             <div>
-              <p class="eyebrow">ITEM DETAILS</p>
-              <h2 id="formTitle">Add a wishlist item</h2>
+              <p class="eyebrow">ADD SOMETHING TO YOUR LIST</p>
+              <h2 id="formTitle">Add a wish</h2>
             </div>
             <button class="text-button" id="cancelEdit" type="button">Cancel</button>
           </div>
@@ -81,8 +75,14 @@
               <textarea id="itemDescription" name="description" rows="3" maxlength="280" placeholder="Why is this on your wishlist?"></textarea>
             </label>
           </div>
-          <div class="form-actions"><button class="primary-button" type="submit">Save item</button></div>
+          <div class="form-actions"><button class="primary-button" id="saveItemButton" type="submit">Add wish</button></div>
         </form>
+        <div class="admin-list-heading">
+          <h2>Your saved things</h2>
+          <button class="secondary-button" id="newItemButton" type="button">＋ New wish</button>
+        </div>
+        <p class="admin-count" id="adminItemCount" aria-live="polite"></p>
+        <div class="admin-item-list" id="adminItemList"></div>
       </div>
       <aside class="preview-column" aria-labelledby="previewHeading">
         <p class="eyebrow">LIVE PREVIEW</p>
