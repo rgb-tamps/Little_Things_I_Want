@@ -74,12 +74,7 @@
 
   async function init() {
     try {
-      const result = await WishlistStorage.loadWishlist();
-      items = result.items;
-      if (result.warning) {
-        $("loadMessage").textContent = result.warning;
-        $("loadMessage").classList.remove("hidden");
-      }
+      items = await WishlistStorage.fetchRepositoryItems(false);
     } catch (error) {
       console.error(error);
       $("loadMessage").textContent = `Wishlist couldn't be loaded. ${error.message}`;

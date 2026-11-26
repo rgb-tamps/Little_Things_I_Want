@@ -7,19 +7,18 @@ A personal wishlist made with semantic HTML, CSS, and vanilla JavaScript. It is 
 - Pinterest-inspired responsive masonry gallery
 - Category filtering, search, price sorting, and priority sorting
 - Item details dialog, lazy-loaded photos, and product links
-- Separate admin page to add, edit, and delete wishlist items
+- Read-only public page; the editor is not linked from the public navigation
+- Separate editor page to add, edit, and delete wishlist items
 - Live card preview and JSON import/export
-- LocalStorage for browser edits, with repository JSON as the starting data
+- Public page reads only `data/wishlist.json`; editor changes stay in LocalStorage
 
 ## Manage and publish items
 
-The admin page saves changes in the current browser only; GitHub Pages cannot write back to the repository. To publish browser edits:
+GitHub Pages is static and has no authentication or write access to the repository. The public page always reads `data/wishlist.json`. The editor at `admin.html` is not linked from the public navigation, but it is not password-protected; anyone who knows its URL can use it to change their own browser's local copy. Those edits do not affect the public list or other visitors.
 
-1. Open **Admin** and choose **Export JSON**.
-2. Replace `data/wishlist.json` in the repository with the downloaded `wishlist.json`.
-3. Commit and push the change.
+To update the public list, open `admin.html`, add/edit/delete items, and choose **Export JSON**. Replace `data/wishlist.json` in the repository with the downloaded file, then commit and push. Only changes committed to the repository update the public list.
 
-Use **Import JSON** to load an exported file in this browser. Use **Reset to repository data** to discard browser edits and reload the version in the repository.
+Use **Import JSON** to load an exported file in the editor's browser. Use **Reset to repository data** to discard browser edits and reload the published file.
 
 To add your own photos, place them in `assets/images/` and use a relative image path such as `assets/images/my-photo.jpg`, or use an HTTPS image URL. The sample items use placeholder images from Picsum Photos.
 
