@@ -12,12 +12,23 @@
   },
   {
     "id": "wish-002",
-    "name": "Canvas tote",
-    "image": "https://picsum.photos/id/26/640/770",
-    "price": 1850,
+    "name": "Shoes Sneakers",
+    "image": "https://down-ph.img.susercontent.com/file/ph-11134207-820lg-mtv3x5g1q41s44.webp",
+    "price": 675,
     "category": "Fashion",
-    "description": "An everyday bag for errands and books.",
-    "url": "https://example.com/tote",
+    "description": "I want Shoes Sneakers.",
+    "url": "https://shopee.ph/%E3%80%90Size36-45%E3%80%91A04-2026-New-Fashion-All-Black-Sport-Shoes-Sneakers-For-Man-And-Women-i.1820994238.55068714711?extraParams=%7B%22display_model_id%22%3A351571702993%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-820lg-mtv3x5g1q41s44",
+    "priority": "Medium",
+    "status": "Want"
+  },
+  {
+    "id": "wish-003",
+    "name": "Jackets",
+    "image": "https://down-ph.img.susercontent.com/file/cn-11134207-820l4-msv6zftutcsnd8.webp",
+    "price": 675,
+    "category": "Fashion",
+    "description": "I want Shoes Sneakers.",
+    "url": "https://shopee.ph/%E3%80%90Size36-45%E3%80%91A04-2026-New-Fashion-All-Black-Sport-Shoes-Sneakers-For-Man-And-Women-i.1820994238.55068714711?extraParams=%7B%22display_model_id%22%3A351571702993%2C%22model_selection_logic%22%3A3%7D&image_ids=ph-11134207-820lg-mtv3x5g1q41s44",
     "priority": "Medium",
     "status": "Want"
   }
